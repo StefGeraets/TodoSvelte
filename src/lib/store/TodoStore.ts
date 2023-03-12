@@ -6,7 +6,7 @@ const data = browser
 	? JSON.parse(window.localStorage.getItem('svelte-todo-list') as string) ?? []
 	: [];
 
-export const todos = writable(data);
+export const todos = writable<Todo[]>(data);
 
 export type Todo = {
 	id: string;
