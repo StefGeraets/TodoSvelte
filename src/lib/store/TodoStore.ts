@@ -8,7 +8,7 @@ const data = browser
 
 export const todos = writable(data);
 
-type Todo = {
+export type Todo = {
 	id: string;
 	text: string;
 	complete: boolean;
